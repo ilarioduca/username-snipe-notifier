@@ -40,6 +40,7 @@ public class Main {
     final static String to = "receiver1@gmail.com,receiver2@gmail.com"; // can be multiple, separated by comma
     final static String subject = "Username \"" + username + "\" now available";
     final static String password = "xxxx xxxx xxxx xxxx"; // your gmail app password
+    static boolean emailSent = false;
 
     //colors
     public static final String ANSI_RESET = "\u001B[0m";
@@ -74,7 +75,11 @@ public class Main {
 
             if (body.contains("\"AVAILABLE\"")) {
                 System.out.println(ANSI_GREEN + "CLAIM IT!\n" + ANSI_RESET);
-                sendEmail(from, to, subject, password);
+
+                if(!emailSent) {
+                    sendEmail(from, to, subject, password);
+                    emailSent = true;
+                }
                 alertUser();
 
                 // during drop window but not released yet

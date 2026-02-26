@@ -1,7 +1,7 @@
 # Username snipe notifier
-A tool to track a Minecraft username's availability during its drop window.
+A tool to track a Minecraft (Java edition) username's availability during its drop window.
 
-Minecraft usernames have a variable drop widow during which it will be released at a random time. The purpose of this tool is to be able to track the username until it becomes available, and notify the user as soon as it becomes available via email.
+Minecraft usernames have a variable drop widow during which it will be released at a random time. The purpose of this tool is to be able to track the username until it becomes available, and notify the user via email as soon as it becomes available.
 
 This is not a sniping tool, it won't automate any part of the name change process apart from calling Minecraft username APIs to fetch the status
 
