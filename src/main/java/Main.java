@@ -75,11 +75,6 @@ public class Main {
 
             if (body.contains("\"AVAILABLE\"")) {
                 System.out.println(ANSI_GREEN + "CLAIM IT!\n" + ANSI_RESET);
-
-                if(!emailSent) {
-                    sendEmail(from, to, subject, password);
-                    emailSent = true;
-                }
                 alertUser();
 
                 // during drop window but not released yet
@@ -127,6 +122,12 @@ public class Main {
     }
 
     static void alertUser() {
+
+        if(!emailSent) {
+            sendEmail(from, to, subject, password);
+            emailSent = true;
+        }
+
         for (int i = 0; i < 5; i++) {
             System.out.println(ANSI_GREEN + "CLAIM IT NOW → https://www.minecraft.net/en-us/msaprofile/mygames/editprofile" + ANSI_RESET);
         }
