@@ -32,3 +32,6 @@ run:
 ```bash
 java Main
 ```
+
+
+This tool is provided for personal use only. By using it, you agree to comply with [Mojang's Terms of Service](https://www.minecraft.net/en-us/eula). The author is not responsible for any misuse, account actions, or consequences resulting from the use of this software. Use at your own risk.
