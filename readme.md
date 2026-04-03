@@ -7,8 +7,6 @@ This is not a sniping tool, it won't automate any part of the name change proces
 
 ## How to use
 
-One day if a miracle happens there will be a UI, but that day is probably gonna be the 30th of February.
-
 ### search settings
 - change the "username" variable to your username of interest
 - change the "freq" variable to how often (in seconds) you want to call Minecraft's APIs (recommended 10-60s)
